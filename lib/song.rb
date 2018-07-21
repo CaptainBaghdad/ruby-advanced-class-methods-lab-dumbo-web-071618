@@ -49,7 +49,7 @@ class Song
 
 
     def self.alphabetical
-     a = @@all.sort_by {|k,v| v}
+     a = @@all.sort_by {|k,v| k == :name}
 
      return a
       
